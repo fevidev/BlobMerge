@@ -714,4 +714,8 @@ function frame(now){
 (async()=>{const d=await idbGet();if(d){let lt=0,it=0;try{lt=JSON.parse(localStorage.getItem('blobmerge-eco')||'{}').t||0}catch(e){}try{it=JSON.parse(d).t||0}catch(e){}if(it>lt)applySave(d)}
   dayCheck();readyAt=performance.now()+300;showTitle();requestAnimationFrame(frame)})();
 </script>
+<script>
+  window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+</script>
+<script defer src="/_vercel/insights/script.js"></script>
 </body></html>
